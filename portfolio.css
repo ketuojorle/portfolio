@@ -1,0 +1,200 @@
+
+
+@import 
+url("https://fonts.googleapis.com/css?family=Sofia");
+@import 
+url("https://fonts.googleapis.com/css?family=Raleway");
+@import 
+url("https://fonts.googleapis.com/css?family=Montserrat");
+
+
+*{
+   box-sizing: border-box;
+}
+
+body{
+    margin:0px;
+    padding:0px;
+    font-family: Montserrat;
+    font-size: 15px;
+    overflow-y: auto;
+       }
+
+
+   
+   
+   
+  .cv-container{
+   width:100%;
+   height: 100%;
+   position: fixed;
+   margin :0;
+   background-color:#ffffff;
+   display:flex ;
+   flex-direction: column;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   border:0px solid grey;
+   border-radius:0px;
+   padding:0px 0px;
+   
+     }
+
+          .profile-details{
+            width: 98%;
+            font-size: 12px;
+            overflow-y: auto;
+            color:black;
+            background-color:#ffffff;
+            display: grid;
+            grid-template-columns: auto;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            text-align:left;          
+            padding :20px 3px 2px 2px ;
+            box-sizing: border-box;
+            box-shadow: 2px 0px 2px 0 rgba(223, 217, 217, 0.7),
+                        -2px 0px 2px 0 rgba(223, 217, 217, 0.7),
+                        0px 2px 2px 0 rgba(223, 217, 217, 0.7);
+            
+              }
+   
+img.profile-passport{
+   width:100px;
+   height:100px;
+   float:left;
+   border-radius:50%;
+   margin-top:10px;
+   position:relative;
+   
+}
+
+ .boxElem{
+   width: 96%;
+   position: relative;
+   margin:auto;
+   box-sizing: border-box;
+   padding:0px 5px 3px;
+   font-family: montserrat;
+   font-weight: lighter;
+   font-size: 16px;
+   line-height:23px;
+   text-align: left;
+   box-shadow: 2px 0px 4px 0 rgba(0,0,0,0.7),
+   -2px 0px 4px 0 rgba(0,0,0,0.7),
+   0px 2px 4px 0 rgba(0,0,0,0.7);
+   
+
+
+ }
+            
+hr{border:1px solid black;
+   }
+
+   .skills-info{
+    width: 90%;
+    position:relative;
+    margin: auto;
+    display:grid;
+    grid-template-columns:23% 23% 23% 23%;
+    gap:2px;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color:white;
+    border:1px solid grey;
+    border-radius: 5px;
+ }
+   
+ .skills-info >div,button{
+    width: 100%;
+    height: 50px;
+    color:white;
+    background-color:black;
+    font-size:14px;
+    text-align: center;
+    padding: 5px 3px ;
+    border:2px solid grey;
+    border-radius: 4px;
+       }
+   
+  a{text-decoration: none;
+    color:black;
+
+    } 
+
+   a:hover{
+      cursor: pointer;
+   }
+ .image-container{
+   width:97%;
+   margin:auto;
+   position: relative;
+   padding:3px;
+   box-sizing: border-box;
+}
+
+img.SpinWheel{
+   width:350px;
+   height: 350px;
+   margin:auto;
+   
+   
+
+}
+
+img.EbuDiaquizImage{
+   width:85%;
+   height: 200px;
+   margin:auto;
+  
+
+}
+
+
+figure{
+   font-family: montserrat;
+   font-weight: lighter;
+   padding:15px 10px;
+   text-align: left;
+  
+}
+
+input[type=button]{
+   background-color: black;
+   color: white;
+   border-radius: 50px;
+   padding: 5px 20px;
+   box-shadow: 4px 4px 8px 0 rgba(126, 124, 124, 0.7),
+   2px 2px 4px 0 rgba(126, 124, 124, 1.0);
+}
+     
+a{
+   text-decoration: nonoe;
+}
+ @media only screen and (min-width :768px){  /* LANDSCAPE TABLETS, LAPTOPS, DESKTOPS*/
+                         body{padding:0px 200px;}
+                        .cv-container{position:relative; border:1px solid grey; padding:0px 0px;font-size: 18px; }                       
+                        .profile-details{font-size: 18px;}                                       
+                        .skills-info{gap:10px;}
+                                                                      
+                                      }
+ 
+                     @media only screen and (min-width :600px){  /* FOR LARGE PHONES AND TABLETS */
+                        body{padding:0px 200px;}
+                        .cv-container{position:relative; border:0px solid grey; padding:0px 0px;font-size: 18px; }                       
+                        .profile-details{font-size: 18px;}                                       
+                        .skills-info{gap:10px;}
+                                               }
+                                  
+                     @media only screen and (max-width :600px){  /*FOR SMALL SCREEN PHONES */
+                        .boxElem{padding:0px 8px 3px 20px;}                         
+                        img.profile-passport{width:50px; height:50px; }
+                        .skills-info{
+                           grid-template-columns:45% 45% ;}
+                           }    
+                                          
+                                                            
+                                                                       
+                                                             
